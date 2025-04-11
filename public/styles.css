@@ -1,0 +1,14 @@
+* {
+  background-color: hsl(34, 78%, 91%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: hsl(207, 64%, 27%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button:hover {
+  cursor: pointer;
+}

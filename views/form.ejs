@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div><%= title %></div>
+    </header>
+    <form method="post" action="/new">
+      <h2>New Message</h2>
+      <label for="user">Name:</label>
+      <input type="text" id="user" name="user" placeholder="your name here" />
+      <label for="message">Message:</label>
+      <textarea
+        type="text"
+        id="message"
+        name="messageText"
+        placeholder="your message here"
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
