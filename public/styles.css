@@ -7,8 +7,37 @@
 body {
   display: flex;
   flex-direction: column;
+  width: auto;
+  align-items: center;
+  gap: 25px;
+}
+
+h1 {
+  font-size: 34px;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+#messages ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 150px;
+  list-style-type: none;
+}
+
+#messages ul li {
+  border: 5px solid hsl(207, 64%, 27%);
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+
+.user {
+  font-weight: bold;
 }
