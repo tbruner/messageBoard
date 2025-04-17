@@ -1,35 +1,57 @@
 * {
-  background-color: hsl(34, 78%, 91%);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: hsl(207, 64%, 27%);
+}
+
+html {
+  background-color: hsl(34, 78%, 91%);
 }
 
 body {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   align-items: center;
-  gap: 25px;
+  margin: 0px;
 }
 
 h1 {
   font-size: 34px;
 }
 
-button:hover {
-  cursor: pointer;
+.newMessage {
+  color: white;
+  background-color: hsl(207, 64%, 27%);
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-#messages ul {
+.newMessage:hover {
+  cursor: pointer;
+  background-color: hsl(207, 64%, 57%);
+}
+
+#messageDisplay {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
-  width: 150px;
   list-style-type: none;
+  width: 100%;
 }
 
-#messages ul li {
+.messageContainer {
+  display: flex;
+  gap: 10px;
+  width: 80%;
+}
+
+.message {
   border: 5px solid hsl(207, 64%, 27%);
+  background-color: white;
+  width: 150px;
   border-radius: 12px;
   text-align: center;
   display: flex;

@@ -8,12 +8,12 @@
     <header>
       <h1><%= title %></h1>
     </header>
-    <section id="messages">
-      <ul>
+    <section id="messageDisplay">
+      <div class="messageContainer">
         <% messages.forEach((message) => { %> <%- include('message', { text:
         message.text, user: message.user }) %> <% }) %>
-      </ul>
+      </div>
+      <a class="newMessage" href="/new">New Message</a>
     </section>
-    <a id="newMessage" href="/new">New Message</a>
   </body>
 </html>
