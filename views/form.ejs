@@ -8,18 +8,31 @@
     <header>
       <h1><%= title %></h1>
     </header>
-    <form method="post" action="/new">
-      <h2>New Message</h2>
-      <label for="user">Name:</label>
-      <input type="text" id="user" name="user" placeholder="your name here" />
-      <label for="message">Message:</label>
-      <textarea
-        type="text"
-        id="message"
-        name="messageText"
-        placeholder="your message here"
-      ></textarea>
-      <button type="submit">Submit</button>
-    </form>
+    <div class="formContainer">
+      <h1 class="formTitle">New Message</h1>
+      <form method="post" action="/new">
+        <div class="fieldContainer">
+          <label for="user">Name</label>
+          <input
+            class="formInput"
+            type="text"
+            id="user"
+            name="user"
+            placeholder="your name here"
+          />
+        </div>
+        <div class="fieldContainer">
+          <label for="message">Message</label>
+          <textarea
+            class="formInput"
+            type="text"
+            id="message"
+            name="messageText"
+            placeholder="your message here"
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
